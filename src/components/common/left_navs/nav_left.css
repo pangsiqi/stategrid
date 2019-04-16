@@ -1,0 +1,32 @@
+.navbar-static-side{
+	position: fixed;
+    width: 220px;
+    height: 100%;
+}
+.slimScrollDiv{
+	position: relative;
+    width: auto;
+    height: 92%;
+}
+.navbarbg, .navbarbg a {
+    color: #FFF;
+}
+
+.navbarbg {
+    height: 40px;
+    text-align: right;
+    padding-right: 20px;
+}
+.navs>li {
+    margin: 0px 10px;
+}
+.navs > li > a {
+    color: #fff;
+    padding: 14px 15px 14px 15px;
+}
+.navs > li > a i[class*=icon-] {
+    font-size: 16px;
+}
+.navs > li > a i {
+    margin-right: 6px;
+}

@@ -1,0 +1,283 @@
+button {border: none; padding:6px 10px 5px 10px; border-radius:4px;}
+button,html input[type="button"],input[type="reset"],input[type="submit"] {
+    cursor: pointer;
+    -webkit-appearance: button
+}
+
+button[disabled],html input[disabled] {
+    cursor: default
+}
+button:hover {opacity: .8;}
+
+button:focus,.btn-outline {
+    color: inherit;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+input[type="checkbox"],input[type="radio"] {
+    padding: 0;
+    box-sizing: border-box
+}
+
+
+
+button:-moz-focus-inner,input:-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top
+}
+
+
+input[type="text"],
+input[type="password"],
+textarea{
+    height:35px; padding:0px 5px;
+    background-color:#FFFFFF;
+    border-radius:4px;
+    border:1px solid #DFE5EA;
+    /* border: none;
+    border-bottom:1px solid #DFE5EA; */
+}
+.el-input-number,.el-input__icon {line-height: 33px;}
+
+
+
+/*Select 样式调整*/
+.el-select .el-input .el-select__caret { font-weight: bold;}
+.el-select .el-input .el-select__caret.is-reverse {color:#02b6a9;}
+.el-select-dropdown__item.selected {color: #02b6a9;font-weight:0px;}
+.el-select-dropdown__item.hover, .el-select-dropdown__item:hover {
+    background-color: #dcf5ef; color: #02b6a9;
+}
+.el-select .el-input__inner:focus {border-color: #A4ACE7;}
+
+
+/*文本框样式调整*/
+textarea { height: auto; }
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus,button:focus,
+.el-select .el-input.is-focus .el-input__inner,
+.el-textarea__inner:focus {
+    outline:none;
+    -webkit-appearance: none;
+    box-shadow:0px 5px 10px 0px #f1f4ff;
+    border-color: #02b6a9;
+}
+
+/*开关样式*/
+.el-switch.is-checked .el-switch__core {
+    border-color: #13ce66;
+    background-color: #13ce66;
+}
+.el-switch {line-height: 40px; height: 40px;}
+
+/*操作按钮样式*/
+[class*=" btn-"],[class^="btn-"] {
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+[class*=" btn-"]:focus,[class^="btn-"]:focus {
+    color: #FBFDFF;
+}
+[class*=" btn-"] i,[class^="btn-"] i {margin-right:5px;}
+
+[class*=" btn-large"],[class^="btn-large"]{
+    height:36px;
+    font-size: 16px;
+    line-height:20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius:6px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.btn-default {
+    background:rgba(162,174,190,1);
+}
+.btn-primarys {
+    background:rgba(101,133,223,1);
+}
+.btn-gray {
+    background-color: #7a83ad;
+    border-color: #7a83ad;
+}
+.btn-yellow {
+    background-color: #d4b237;
+    border-color: #d4b237;
+}
+.btn-green {
+    background-color: #25b99e;
+    border-color: #25b99e;
+}
+.btn-blue {
+    background-color: #2fa5e5;
+    border-color: #2fa5e5;
+}
+.btn-red {
+    background-color: #e3517c;
+    border-color: #e3517c;
+}
+.btn-purple {
+    background-color: #bd51e3;
+    border-color: #bd51e3;
+}
+
+.btn-orange {
+    background-color: #ec8d62;
+    border-color: #ec8d62;
+}
+.btn-primarys {
+    background-color: #5d7fde;
+    border-color: #5d7fde;
+}
+.btn-default {
+    background-color: #ffffff;
+    color: #5B6371;
+    border: 1px solid #dfe5ea;
+}
+.btn-default:hover { color: #576FAE; }
+
+
+
+/*右侧对Table操作项按钮*/
+.btn-refresh,.btn-outline {
+    height: 32px;
+    padding-right: 10px;
+    padding-left: 10px;
+    line-height: 27px;
+    padding-top: 3px;
+    cursor: pointer;
+}
+.btn-refresh{
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.btn-outline {
+    padding-right: 5px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+
+.fixed-table-toolbar .btn-group>.btn-group {
+    display: inline-block;
+    margin-left: -1px!important;
+}
+.btn-group>.btn-group,.btn-group>.btn {
+    float: left;
+}
+.btn-group, .btn-group-vertical {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.fixed-table-toolbar .btn-group>.btn-group:last-child>.btn {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.el-input-group__append button.el-button, .el-input-number__decrease, .el-input-number__increase {
+    color: #409EFF;
+    background-color: #ecf5ff;
+}
+
+.el-input-group__append button.el-button {
+    height: inherit;/*33px*/
+    font-weight: bold;
+    padding-top:9px;
+    padding-bottom:8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: -17px;
+    border-radius: 0 4px 4px 0;
+    border-color: inherit;
+}
+.el-input-group__append .el-button {margin: -10px -17px;}
+.el-input-group__append button.el-button.is-disabled,.el-input-group__append button.el-button.is-disabled:hover { background-color: transparent; color: #e4e7ed; border-color: transparent;}
+.el-switch.is-disabled { opacity: .3;}
+.el-input-number.is-disabled .el-input-number__decrease, .el-input-number.is-disabled .el-input-number__increase {
+    border-color: #e4e7ed;
+    background-color: transparent;
+}
+
+.child-search {width:180px; position:absolute; right:80px; top:20px;}
+
+
+/*------------------------文本框默认内容提示字颜色 By Heliping------------------------*/
+.el-radio,.el-checkbox{
+	line-height: 40px !important;
+}
+.el-table__body td .el-radio,.el-table__body td .el-checkbox{
+	line-height: 20px !important;
+}
+.el-form-item {
+    margin-bottom: 19px !important;
+}
+
+textarea {
+    outline: none;
+    font: 14px/1.8 "PingFangSC-Regular", "HelveticaNeue-Light", "Helvetica Neue Light", "Microsoft YaHei","sans-serif";
+}
+input:-webkit-input-placeholder {/* WebKit, Blink, Edge */
+    /* placeholder颜色  */
+    color: #C6CED6;
+    /* placeholder字体大小  */
+    font-size: 14px;
+    /* placeholder位置  */
+    text-align: left;
+}
+
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:#C6CED6;
+}
+input:-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:#C6CED6;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:#C6CED6;
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background-color: #FFFFFF !important;
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+    background-image: none !important;
+    color: #000000 !important;
+}
+
+/*按钮图标划出效果显示按钮文字*/
+.el-collapse-item{
+    position: relative;
+}
+.table-func {
+    position: absolute; top: 10px; right: 40px;
+}
+.table-func button {
+    width: 45px; transition: width 400ms ease, background 400ms ease;
+}
+.table-func button font {
+    display: none;
+}
+
+.table-func button:hover {
+    width: 80px;
+}
+.table-func button:hover font {
+    display: inline-block;
+}
+
+.table-funcb {
+    position: absolute;
+    top: -50px;
+    right: 0px;
+}
+
